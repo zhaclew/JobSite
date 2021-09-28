@@ -1,0 +1,241 @@
+body {
+    background-color: #efefef;
+}
+
+div.box {
+    width: 90%;
+    min-width: 800px;
+    background-color: #fff;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    overflow: hidden;
+    /*清除浮动*/
+}
+
+div.title {
+    height: 60px;
+    line-height: 60px;
+    border-bottom: 1px solid #ccc;
+    font-size: 24px;
+    padding-left: 20px;
+}
+
+div.userImg {
+    height: 40px;
+    width: 40px;
+    background: red;
+    border-radius: 20px;
+    overflow: hidden;
+    float: right;
+    margin-top: 10px;
+    margin-right: 50px;
+}
+
+div.userImg>img {
+    width: 100%;
+    height: 100%;
+}
+
+div.main {
+    margin-left: 150px;
+}
+
+div.menu {
+    margin-left: -150px;
+    float: left;
+    width: 150px;
+    padding-bottom: 50px;
+}
+
+div.menu ul {
+    margin: 0;
+    padding: 0;
+}
+
+div.menu li {
+    list-style: none;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+}
+
+div.menu li>a {
+    display: block;
+    text-decoration: none;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    color: #000;
+}
+
+li.cc>a {
+    background-color: #ccc;
+}
+
+div.main-title {
+    float: left;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    font-size: 20px;
+    padding-left: 30px;
+    border-bottom: 1px solid #ccc;
+}
+
+div.main-content {
+    float: left;
+    padding: 30px;
+    width: 90%;
+}
+
+table tr {
+    height: 30px;
+}
+
+.title-1,
+.title-2 {
+    font-weight: bold;
+}
+
+div.tips {
+    float: left;
+    height: 30px;
+    width: 100%;
+    line-height: 30px;
+    border-bottom: 1px solid #ccc;
+    padding-left: 30px;
+    font-size: 18px;
+    background-color: #e7f5e7;
+}
+
+p.red-font {
+    color: red;
+}
+
+div.album-act {
+    overflow: hidden;
+}
+
+div.album-act-each {
+    float: left;
+    padding-right: 10px;
+    padding-bottom: 20px;
+}
+
+div.album-position {
+    background: #efefef;
+    border-top: 1px solid #afaea8;
+    border-bottom: 1px solid #afaea8;
+    line-height: 30px;
+    padding-left: 20px;
+}
+
+div.child-album {
+    border-bottom: 2px solid #afaea8;
+    line-height: 30px;
+    padding-left: 20px;
+}
+
+div.photo-each {
+    float: left;
+    width: 150px;
+    height: 150px;
+    border: 1px solid #efefef;
+    padding: 10px;
+    margin: 20px;
+    overflow: hidden;
+}
+
+div.photo-each>img {
+    width: 100%;
+}
+
+textarea {
+    border: 0;
+    border-radius: 5px;
+    background-color: rgba(241, 241, 241, .98);
+    width: 355px;
+    height: 100px;
+    padding: 10px;
+    resize: none;
+}
+
+.photo{
+    width: 100px;
+    
+}
+.detail{
+    border: 0;
+    border-radius: 5px;
+    background-color: rgba(241, 241, 241, .98);
+    width: 250px;
+    height: 60px;
+    padding: 10px;
+    resize: none;
+}
+
+.zpfb{
+  
+    position: relative;  
+}
+
+.zpfb img{
+     height: 80px;
+    float: left;
+}
+.zpfb p{
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 13px;
+}
+.space{
+     text-indent: 1em;
+}
+.LW-box{
+    display: flex;
+}
+.LW-box>ul{
+    text-decoration: none;
+    list-style: none;
+    border: 1px solid black;
+    margin:10px;
+    padding: 25px;
+}
+.LW-box>ul>li{
+   border-bottom: 1px solid #ccc; 
+   line-height: 25px;
+}
+.admin{
+    text-decoration: none;
+    list-style: none;
+}
+.admin li{
+    border-bottom: 1px solid #ccc;
+    line-height: 45px;
+    
+}
+.admin li span{
+    display: inline-block;
+    width: 150px;
+    margin-right:10px;
+}
+.admin li span:nth-child(2){
+    
+    width: 240px;
+   
+}
+
+.admin li a{
+    text-decoration: none;
+    list-style: none;
+    border: 1px solid #40c9f4; 
+    padding: 5px;
+    border-radius: 5px; 
+    font-size: 12px;
+    color: #222222;
+}
+.admin li a:hover{
+    color: white;
+    background-color:  #40c9f4;
+}

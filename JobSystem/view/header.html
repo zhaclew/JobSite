@@ -1,0 +1,66 @@
+<?php 
+	
+		session_start();
+		error_reporting(0);
+		
+		
+		// 1.连接数据库
+		$conn = mysqli_connect('127.0.0.1', 'root', '123456', 'jobsystem');
+
+        if (!$conn) {
+         exit('<h1>连接数据库失败</h1>');
+		}
+	
+		if(!$_SESSION['id']){
+			$_SESSION['id'] = 1;
+		}
+		
+        // 2. 开始获取账号内容 ".$_SESSION['id']."
+        $user = mysqli_query($conn,"select name,Phone,Type,Gender,Create_time,txt,photo from `user` where id = ".$_SESSION['id'].";");
+
+        if (!$user) {
+          exit('<h1>查询数据库失败</h1>');
+        }
+
+        $user_valus = mysqli_fetch_assoc($user);
+
+?>
+<html>
+<head>
+	<link rel="stylesheet" href="./css/style.css">
+	<title>用户中心</title>
+</head>
+<body>
+	<div class="box">
+		<div class="title">
+			用户中心
+			<div class="userImg">
+				<?php if (!isset($user_valus["photo"])): ?>
+				<img src="./images/default.png" alt="" "><br>
+				<?php endif; ?>
+				<?php if (isset($user_valus["photo"])): ?>
+				<img src="<?php echo $user_valus["photo"];?>" alt="" ><br>
+				<?php endif; ?>
+			</div>
+		</div>
+		<div class="main">
+			<!-- 分左右 -->
+			<div class="menu">
+				<ul>
+					<li class="title-1">个人资料</li>
+					<li id="showInfo"><a href="showInfo.php">个人信息</a></li>
+					<li id="editInfo"><a href="editInfo.php">编辑信息</a></li>
+					<li id="photo"><a href="photo.php">上传头像</a></li>
+					<?php if ($user_valus["Type"]==1): ?>
+					<li id="album"><a href="album.php">编辑企业信息</a></li>
+					<li id="zpfb"><a href="look.php">查看企业信息</a></li>
+					<li id="work"><a href="work.php">发布招聘信息</a></li>
+					<li id="hello"><a href="lookWork.php">查看已发布招聘</a></li>
+					<?php endif; ?>
+					<?php if ($user_valus["Type"]==0): ?>
+					<li id="album"><a href="admin.php">管理网站账号</a></li>
+					<?php endif; ?>	
+					<li class="title-2">系统功能</li>
+					<li><a href="index.php">回到首页</a></li>
+				</ul>
+			</div>

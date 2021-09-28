@@ -1,0 +1,218 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f6f6f8;
+    font-weight: 500;
+    font-family: "Microsoft YaHei", "宋体", "Segoe UI", "Lucida Grande", Helvetica, Arial, sans-serif, FreeSans, Arimo;
+}
+
+/*导航条样式*/
+nav {
+    width: 100%;
+    height: 49px;
+    background-color: #151C27;
+    box-shadow: 0 1px 8px rbga(0, 0, 0, .6);
+    position: relative;
+    z-index: 999;
+}
+
+nav>ul {
+    display: flex;
+    width: 1180px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    position: relative;
+}
+
+nav>ul>li {
+    margin-right: 35px;
+}
+
+nav>ul>li>a {
+    color: white;
+    line-height: 26px;
+}
+
+nav>ul>li:last-child {
+    position: absolute;
+    right: 0;
+    margin: 0;
+}
+
+nav>ul>li>a:hover {
+    color: #55cbc4;
+}
+
+/*搜索框样式*/
+#container {
+    width: 500px;
+    height: 100px;
+    margin: 0 auto;
+    position: relative;
+}
+
+div.search {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.search form {
+    position: relative;
+    width: 600px;
+    margin: 0 auto;
+}
+
+.search input,
+.search button {
+    border: none;
+    outline: none;
+}
+
+.search input {
+    width: 100%;
+    height: 42px;
+    padding-left: 13px;
+}
+
+.search button {
+    height: 42px;
+    width: 42px;
+    cursor: pointer;
+    position: absolute;
+}
+
+.bar input {
+    border: 2px solid #55cbc4;
+    border-radius: 5px;
+    background: transparent;
+    top: 0;
+    right: 0;
+}
+
+.bar button {
+    background: #55cbc4;
+    border-radius: 0 5px 5px 0;
+    width: 60px;
+    top: 0;
+    right: 0;
+}
+
+.bar button:before {
+    content: "搜索";
+    font-size: 13px;
+    color: #F9F0DA;
+}
+
+/*招聘信息样式*/
+.jobs {
+    width: 1180px;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.jobs>div {
+    width: 100%;
+}
+
+.box-title {
+    font-size: 24px;
+    text-align: center;
+    position: relative;
+    margin-bottom: 24px;
+    padding-top: 20px;
+    color: #414a60;
+}
+
+.box-title::before {
+    content: '';
+    display: inline-block;
+    vertical-align: 8px;
+    margin: 0 10px;
+    width: 50px;
+    height: 1px;
+    background: #d1d4db;
+}
+
+.box-title::after {
+    content: '';
+    display: inline-block;
+    vertical-align: 8px;
+    margin: 0 10px;
+    width: 50px;
+    height: 1px;
+    background: #d1d4db;
+}
+
+.occupation-sort {
+    height: 50px;
+   	display: flex;
+    background: #fff;
+    padding-left: 25px;
+}
+
+.occupation-sort>span {
+   padding: 0 50px 0 20px;
+    line-height: 50px;
+    color: #8d92a1;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.jobs-box{
+    width: 100%;
+	padding:25px 0;
+    display: flex;
+}
+.jobs-box>li{
+	cursor: pointer;
+    margin-left: 20px; 
+    margin-top: 10px;    
+}
+.jobs-box>li:nth-child(1){
+     margin-left: 0; 
+}
+.jobs-box>li>a{
+   color: #55cbc4;
+    padding:15px;
+    background-color: #fff;
+    border-radius: 5px;
+
+}
+.jobs-box>li>a:hover{
+    background-color: #ccc;
+    color: black; 
+}
+
+.play ul{
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    border: 1px solid #55cbc4;
+    border-radius: 5px;
+}
+.play ul li{
+    border-bottom: 1px solid #55cbc4;
+    line-height: 50px;
+}
+.play ul li:last-child{
+     border-bottom:0;
+}
+.play ul li img{
+   width: 25%;
+}
+.enterprise_img li:nth-child(1){
+   line-height: 0;
+}

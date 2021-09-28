@@ -1,0 +1,102 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+div.box {
+    width: 320px;
+    height: 220px;
+    border: 1px solid #9281b7;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -140px;
+    margin-left: -160px;
+    padding: 20px;
+    box-shadow: 3px 3px 3px #a0a2e6;
+}
+
+div.box table,
+table td{
+    width: 100%;
+}
+td input{
+    width: 100%;
+}
+tr {
+    height: 40px;
+}
+
+div.box table input {
+    height: 30px;
+    width: 100%;
+}
+
+tr.tt {
+    height: 20px;
+}
+
+tr.tt>td {
+    text-align: left;
+    vertical-align: middle;
+    color: grey;
+    font-size: 12px;
+}
+
+tr.tt>td>input[type=checkbox] {
+    width: 10px;
+    height: 10px;
+    padding: 10px;
+}
+
+tr.error-tr {
+    height: 20px;
+    line-height: 20px;
+    font-size: 10px;
+    color: red;
+    background: #ece5a2;
+    text-align: center;
+}
+
+tr.code-tr>td>input {
+    width: 90%;
+}
+
+table {
+    position: relative;
+}
+
+.join {
+    position: absolute;
+    bottom: 29px;
+    right: 0;
+}
+
+.join>td>span {
+    color: grey;
+    font-size: 12px;
+}
+
+.zc {
+    text-decoration: none;
+    color: black;
+    background-color: rgb(239, 239, 239);
+    font-size: 12px;
+    padding: 4px;
+    border: 1px solid black;
+    border-radius: 5px;
+    line-height: 28px;
+}
+
+.sign {
+    position: absolute;
+    top: 132px;
+    right: 0;
+}
+
+.sign>td>span {
+    color: grey;
+    font-size: 12px;
+}

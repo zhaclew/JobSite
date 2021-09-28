@@ -1,4 +1,4 @@
-# JobSite
+# JobSystem
 一个基于PHP+MySQL创建的简易网站
 
 # 关于网站介绍 
